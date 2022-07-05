@@ -18,12 +18,11 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/infra_files'
     backendServiceArm: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
     backendAzureRmResourceGroupName: 'Docker'
     backendAzureRmStorageAccountName: 'terrastorage75'
     backendAzureRmContainerName: 'tfstatenew'
-    backendAzureRmKey: 'terraform.tfstate'
+    backendAzureRmKey: 'tfstate'
 
 - task: TerraformTaskV3@3
   inputs:
