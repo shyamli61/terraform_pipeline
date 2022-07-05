@@ -23,18 +23,17 @@ steps:
     backendAzureRmStorageAccountName: 'terrastorage75'
     backendAzureRmContainerName: 'tfstatenew'
     backendAzureRmKey: 'tfstate'
-
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'plan'
-   
     environmentServiceNameAzureRM: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
-
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    
     commandOptions: '--auto-approve'
     environmentServiceNameAzureRM: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
+
+
+
