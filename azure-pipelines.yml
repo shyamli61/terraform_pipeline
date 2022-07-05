@@ -28,13 +28,13 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'plan'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/infra_files'
+   
     environmentServiceNameAzureRM: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
 
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/infra_files'
+    
     commandOptions: '--auto-approve'
     environmentServiceNameAzureRM: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
