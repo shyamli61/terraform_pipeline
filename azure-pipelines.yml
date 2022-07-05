@@ -20,9 +20,9 @@ steps:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/infra_files'
     backendServiceArm: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
-    backendAzureRmResourceGroupName: 'terrafromrg'
-    backendAzureRmStorageAccountName: 'terrafromstg'
-    backendAzureRmContainerName: 'terrafromyaml'
+    backendAzureRmResourceGroupName: 'Docker'
+    backendAzureRmStorageAccountName: 'terrastorage75'
+    backendAzureRmContainerName: 'tfstatenew'
     backendAzureRmKey: 'terraform.tfstate'
 
 - task: TerraformTaskV3@3
