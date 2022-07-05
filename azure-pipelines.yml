@@ -22,7 +22,7 @@ steps:
     backendServiceArm: 'Azure subscription 1 (4cb4fd44-8619-4842-a4df-d87f86c12cdf)'
     backendAzureRmResourceGroupName: 'terrafromrg'
     backendAzureRmStorageAccountName: 'terrafromstg'
-    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmContainerName: 'terrafromyaml'
     backendAzureRmKey: 'prod.tfstate'
 
 - task: TerraformTaskV3@3
